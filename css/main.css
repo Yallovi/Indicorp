@@ -588,5 +588,10 @@ body {
     display: block;
     margin-bottom: 15px;
   }
+  -card:hover {
+    color: #fff;
+    background: #00A0C1;
+    transform: scale(1.1);
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -581,6 +581,7 @@ body {
   }
   .main-button {
     text-align: -moz-center;
+    text-align: -webkit-center;
   }
   .main-button .button {
     display: block;

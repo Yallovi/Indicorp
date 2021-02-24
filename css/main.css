@@ -142,6 +142,106 @@ body {
   color: #fff;
 }
 
+.main .menu {
+  opacity: 1;
+  background: #fff;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  left: -100vw;
+}
+
+.main .menu-link {
+  display: none;
+  z-index: 9;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 20px;
+  left: 80%;
+}
+
+.main .menu-link span, .main .menu-link span:before, .main .menu-link span:after {
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -1px;
+  background: #333333;
+}
+
+.main .menu-link span:before {
+  transition: all 0.2s;
+  content: '';
+  margin-top: -6px;
+}
+
+.main .menu-link span:after {
+  transition: all 0.2s;
+  content: '';
+  margin-top: 4px;
+}
+
+.main .menu-link__active span {
+  background-color: transparent;
+}
+
+.main .menu-link__active span::before {
+  transform: rotate(135deg);
+  margin-top: 0;
+}
+
+.main .menu-link__active span::after {
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+
+.main .menu__active {
+  left: 0;
+}
+
+.main .menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.main .menu ul li {
+  width: 100vw;
+}
+
+.main .menu ul a {
+  display: block;
+  width: 100%;
+  line-height: 4;
+  font-weight: 100;
+  later-spacing: 4px;
+  color: #737373;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.main .menu ul a:hover {
+  background-color: rgba(115, 115, 115, 0.5);
+  text-decoration: none;
+}
+
+.main .menu ul:focus {
+  outline: none;
+}
+
 .about {
   padding-top: 120px;
   background: #FAFAFA;

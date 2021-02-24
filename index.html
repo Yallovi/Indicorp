@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/bootstrap-grid.min.css">
 <link rel="stylesheet" href="css/main.css">
 <body>
-    <div class="main">
+    <div id="main" class="main">
         <header class="header"> 
             <div class="container">
                 <div class="row align-items-center">
@@ -40,6 +40,18 @@
                             </ul>
                             <!-- /.navigation -->
                         </nav>
+                        <a class="menu-link " href="#menu">
+                            <span></span>
+                        </a>
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#main">Home</a></li>
+                                <li><a href="#advice">Product</a></li>
+                                <li><a href="#services">Pricing</a></li>
+                                <li><a href="#callback">Contact</a></li>
+                                <!-- <li><a href="#connection">контакты</a></li> -->
+                            </ul>
+                        </div>
                     </div>
                     <!-- /.col-4 -->
                 </div>
@@ -172,7 +184,7 @@
         <!-- /.container -->
     </section>
     <!-- /.about -->
-    <section class="advice">
+    <section id="advice" class="advice">
         <div class="container">
             <div class="row align-items-center">
                 <h1 class="advice-title">Practice Advice</h1>
@@ -255,7 +267,7 @@
         <!-- /.container -->
     </section>
     <!-- /.adbvice -->
-    <section class="services">
+    <section id="services" class="services">
         <div class="container">
             <div class="row">
                 <h1 class="services-title">We are providing best <br>
@@ -361,7 +373,7 @@
         <!-- /.bg -->
     </section>
     <!-- /.clients -->
-    <section class="callback">
+    <section id="callback" class="callback">
         <div class="container">
             <div class="row">
                 <h1 class="callback-title">Get In Touch</h1>
@@ -563,5 +575,7 @@
         <!-- /.container -->
     </div>
     <!-- /.footer-label -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
